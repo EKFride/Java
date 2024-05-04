@@ -28,13 +28,13 @@ public class CheckIntegerNumber {
         
         if(number <= 0) {
             System.out.println("Prime number is not defined for negative numbers or zero.");
-        }
-        
-        if(ck.checkPrime(newnum)) { 
-            System.out.println("1");
-        }
-        else {
-            System.out.println("0");
+        }else{
+            if(ck.checkPrime(newnum)) { 
+                System.out.println("1");
+            }
+            else {
+                System.out.println("0");
+            }
         }
     }
     
@@ -56,7 +56,7 @@ public class CheckIntegerNumber {
     * @return 
     */
     boolean checkPrime(int number) {
-        if (number == 1) return false;
+        if (number <= 1) return false;
         for(int i=2 ; i < number ; i++){
             if(number%i==0) 
                 return false;
