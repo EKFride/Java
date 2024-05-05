@@ -35,7 +35,7 @@ public class FindPrimeAndSum {
                 }
             }
         } else {
-            for (int i = end ; i <= start ; i++){
+            for (int i = start ; i >= end ; i--){
                 if(isPrime(i)){
                     System.out.print(i + " ");
                     count += 1;

@@ -20,11 +20,11 @@ public class SetUpTime {
             System.out.print("Input: ");
             sc.next();
         }
-        int input = sc.nextInt();
-        int days = input / (24 * 3600);
-        input = input % (24 * 3600);
-        int hours = input / 3600;
-        input %= 3600;
+        int input = sc.nextInt(); 
+        int days = input / (24 * 3600); 
+        input = input % (24 * 3600); 
+        int hours = input / 3600; 
+        input %= 3600; 
         int minutes = input / 60;
         input %= 60;
         int seconds = input;
